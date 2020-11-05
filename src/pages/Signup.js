@@ -10,7 +10,7 @@ function Signup() {
 
   function Register({userName,password}){
 
-    localStorage.setItem({userName},{password})
+    localStorage.setItem(userName,password)
     
     return <Redirect to='/login' />;
     
@@ -28,7 +28,7 @@ function Signup() {
             setPassword(e.target.value);
           }}/>
         <Input type="password" placeholder="password again" />
-        <Button onClick={Register(userName,password)}>Sign Up</Button>
+        <Button onClick={() => Register(userName,password)}>Sign Up</Button>
       </Form>
       <Link to="/login">Already have an account?</Link>
     </Card>

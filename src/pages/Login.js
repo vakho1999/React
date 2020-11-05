@@ -12,7 +12,7 @@ function Login(props) {
   function postLogin({userName,password}) {
     
     const isLoggedIn = false;
-    if (localStorage.getItem({userName}) === {password}){
+    if (localStorage.getItem(userName) === password){
       isLoggedIn = true
     }
     if (isLoggedIn) {
@@ -42,7 +42,7 @@ function Login(props) {
           }}
           placeholder="password"
         />
-        <Button onClick={postLogin()}>Sign In</Button>
+        <Button onClick={() => postLogin(userName,password)}>Sign In</Button>
       </Form>
       <Link to="/signup">Don't have an account?</Link>
         
