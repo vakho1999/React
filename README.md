@@ -1,3 +1,10 @@
+# აღწერა
+ყველა ლოგიკა იმპლემენტირებულია, მონაცემთა ბაზის გარდა ვინაიდან აქცენტი სხვა ლოგიკებზე გვქონდა და ვეცადე პრიმიტიულად გამეკეთებინა ის ლოგიკები რაც 
+ამ მომენტში დიდად მნიშვნელოვანი არ იყო. ასევე შეამჩნევთ რომ სთეით მენეჯმენტიდან მიდგომა არ მაქვს გამოყენებული, კონტექსტ ეიფია
+და რედაქსი.
+# საიტის ლინკი
+https://compassionate-euclid-5996b0.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
