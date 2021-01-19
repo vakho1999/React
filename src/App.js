@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import Search from './components/Search';
+import {todos as Todos} from '../src/components/todoList'
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
+  const [searchtext,setsearchText] = useState("");
+  const [todolist,setTodolist] = useState(
+    {
+      'Backlog': {
+        'items':[ {'title': 'Card Title','context':'lorem ipsum morgalis varada','selectedDate': new Date()}  ],
+        'color': 'red'
+      },
+      'To Do': {
+        'items':[{'title': 'Card Title','context':'lorem ipsum morgalis varada','selectedDate': new Date()}],
+        'color':'pink'
+      },
+      'In Progress': {
+        'items':[],
+        'color':'green'
+
+      },
+      'Done': {
+        'items':[],
+        'color':'lime'
+      }
+    }
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+          <Search setsearchText={setsearchText}/>
+          <Todos searchtext={searchtext} todolist={{todolist,setTodolist}}/> 
+      </div>
     </div>
   );
 }
