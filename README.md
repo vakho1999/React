@@ -1,3 +1,11 @@
+
+# აღწერა
+პროექტის თემა: ონლაინ მაღაზია
+გაიარეთ რეგისტრაცია მარტივად, იმეილით და პაროლით, აირჩიეთ რომელიმე პროდუქტი ღილაკის დაჭერით, გადადით, 
+ქართ სექციქაში და იყიდეთ არჩეული პროდუქტები
+# საიტის ლინკი
+https://elegant-stonebraker-f8581c.netlify.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
