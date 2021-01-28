@@ -1,7 +1,9 @@
-import firebase from "firebase/app"
+import firebase from "firebase/app";
 import "firebase/auth";
+import 'firebase/storage';
+import 'firebase/firestore';
 
- const database = firebase.initializeApp({
+const database = firebase.initializeApp({
     apiKey: "AIzaSyDjDEyeOoJFHeTi_X10UdZxTdutcTnM3lM",
     authDomain: "davaleba3.firebaseapp.com",
     projectId: "davaleba3",
@@ -12,3 +14,9 @@ import "firebase/auth";
 });
 
 export default database;
+
+const Storage = firebase.storage();
+const Firestore = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+
+export { Storage, Firestore, timestamp };
